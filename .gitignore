@@ -1,0 +1,11 @@
+# Local documentation files (not for publication)
+HOW_TO_ADD_TUTORIAL.md
+
+# IDE
+.cursorrules
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
