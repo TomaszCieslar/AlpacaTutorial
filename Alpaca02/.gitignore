@@ -16,6 +16,7 @@ ENV/
 
 # Configuration files with sensitive data
 config.py
+PUBLISH_GITHUB.md
 
 # IDE
 .vscode/
