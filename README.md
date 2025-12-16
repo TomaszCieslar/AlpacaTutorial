@@ -7,13 +7,13 @@ This repository contains a series of tutorials for learning algorithmic trading 
 - **[Alpaca02](Alpaca02/)** - "Hello, Alpaca!" - Connect & Check Your Account Status
   - Learn how to connect to the Alpaca API and retrieve basic account information
 
-- **Tutorial 4** - Place Market Order
+- **[Alpaca04](Alpaca04/)** - Place Market Order
   - Learn how to place a MARKET order to buy or sell a stock
   - Files: `place_order.py`, `instructions.md`
 
 ## 🚀 Getting Started
 
-Each tutorial is in its own folder (or in the root for Tutorial 4). Navigate to the tutorial folder you want to follow and check the `README.md` file in that folder for specific instructions.
+Each tutorial is in its own folder. Navigate to the tutorial folder you want to follow and check the `README.md` file in that folder for specific instructions.
 
 ### Prerequisites
 
@@ -23,7 +23,7 @@ Each tutorial is in its own folder (or in the root for Tutorial 4). Navigate to 
 
 ### General Setup
 
-1. Navigate to the tutorial folder (e.g., `Alpaca02`) or use files in root (Tutorial 4)
+1. Navigate to the tutorial folder (e.g., `Alpaca02` or `Alpaca04`)
 2. Install dependencies: `pip install -r requirements.txt`
 3. Configure your API keys in `config.py` (create from template if needed)
 4. Run the tutorial script
@@ -39,9 +39,13 @@ AlpacaTutorial/
 │   ├── requirements.txt  # Python dependencies
 │   └── ...
 │
-├── place_order.py         # Tutorial 4: Place Market Order
-├── instructions.md        # Tutorial 4 instructions
-├── requirements.txt       # Python dependencies (Tutorial 4)
+├── Alpaca04/              # Tutorial 4: Place Market Order
+│   ├── place_order.py    # Main script
+│   ├── README.md         # Tutorial-specific documentation
+│   ├── requirements.txt  # Python dependencies
+│   ├── instructions.md   # Detailed tutorial instructions
+│   └── ...
+│
 └── README.md             # This file
 ```
 
