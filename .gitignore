@@ -35,3 +35,7 @@ Thumbs.db
 dist/
 build/
 *.egg-info/
+
+# Local documentation files (not for publication)
+HOW_TO_ADD_TUTORIAL.md
+PUBLISH_GITHUB.md

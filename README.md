@@ -1,73 +1,56 @@
-# Alpaca Trading Course - Tutorial 4
+# Alpaca Trading Course - Tutorial Series
 
-## Place Market Order Script
+This repository contains a series of tutorials for learning algorithmic trading with the Alpaca API.
 
-This tutorial demonstrates how to place a MARKET order to buy or sell a stock using the Alpaca Trading API.
+## 📚 Tutorials
+
+- **[Alpaca02](Alpaca02/)** - "Hello, Alpaca!" - Connect & Check Your Account Status
+  - Learn how to connect to the Alpaca API and retrieve basic account information
+
+- **Tutorial 4** - Place Market Order
+  - Learn how to place a MARKET order to buy or sell a stock
+  - Files: `place_order.py`, `instructions.md`
+
+## 🚀 Getting Started
+
+Each tutorial is in its own folder (or in the root for Tutorial 4). Navigate to the tutorial folder you want to follow and check the `README.md` file in that folder for specific instructions.
 
 ### Prerequisites
 
-1. **Completed Tutorial 2**: You must have a working `config.py` file with your API keys
-2. **Paper Trading Account**: Use your Alpaca Paper Trading Account to test this script. Running it on a Live Account will execute a real trade with real money.
+- Python 3.8 or higher (Python 3.10+ recommended)
+- An Alpaca Paper Trading Account
+- Alpaca API Keys (Paper Trading)
 
-### Project Structure
+### General Setup
+
+1. Navigate to the tutorial folder (e.g., `Alpaca02`) or use files in root (Tutorial 4)
+2. Install dependencies: `pip install -r requirements.txt`
+3. Configure your API keys in `config.py` (create from template if needed)
+4. Run the tutorial script
+
+## 📁 Repository Structure
 
 ```
-alpaca_bot_project/
-├── config.py              # API credentials (NOT in version control)
-├── place_order.py         # Main script for placing orders
-├── requirements.txt       # Python dependencies
-├── README.md              # This file
-└── instructions.md        # Detailed tutorial instructions
+AlpacaTutorial/
+│
+├── Alpaca02/              # Tutorial 2: Hello Alpaca
+│   ├── hello_alpaca.py   # Main script
+│   ├── README.md         # Tutorial-specific documentation
+│   ├── requirements.txt  # Python dependencies
+│   └── ...
+│
+├── place_order.py         # Tutorial 4: Place Market Order
+├── instructions.md        # Tutorial 4 instructions
+├── requirements.txt       # Python dependencies (Tutorial 4)
+└── README.md             # This file
 ```
 
-### Setup
+## 🔒 Security
 
-1. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+- **Never commit `config.py`** - It contains your API keys
+- Each tutorial folder has its own `.gitignore` to protect sensitive files
+- Always use Paper Trading keys for tutorials
 
-2. **Configure API Keys**
-   - Copy `config.py` and add your Alpaca API credentials
-   - Get your API keys from: https://app.alpaca.markets/paper/dashboard/overview
-   - **IMPORTANT**: Never commit `config.py` to version control
+## 📝 License
 
-3. **Run the Script**
-   ```bash
-   python place_order.py
-   ```
-
-### What This Script Does
-
-1. **Checks Market Status**: Verifies that the market is open before attempting to place an order
-2. **Places Market Order**: Executes a buy or sell order at the current market price
-3. **Displays Confirmation**: Shows order details including Order ID, Symbol, Quantity, and Status
-
-### Order Parameters
-
-- **Symbol**: Stock to trade (default: "AAPL")
-- **Quantity**: Number of shares (default: 1)
-- **Side**: 'buy' to purchase, 'sell' to sell
-- **Type**: 'market' - executes immediately at best available price
-- **Time in Force**: 'day' - order valid until end of trading day
-
-### Important Notes
-
-- ⚠️ **Paper Trading**: This script uses the paper trading environment by default
-- ⚠️ **Market Hours**: Orders can only be placed when the market is open
-- ⚠️ **Error Handling**: All API calls are wrapped in try/except blocks for reliability
-
-### Learning Objectives
-
-- Understanding market orders
-- Checking market status before trading
-- Placing orders through the Alpaca API
-- Handling order confirmations and errors
-
-### Next Steps
-
-After completing this tutorial, you can:
-- Modify the script to trade different stocks
-- Experiment with different order types
-- Add more sophisticated error handling
-- Implement order status tracking
+This tutorial series is part of an educational course on algorithmic trading with Alpaca.
