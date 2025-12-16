@@ -108,3 +108,4 @@ timestamp                                                      ...
 2023-12-08 05:00:00+00:00  194.20  195.99  193.67  195.71  ...  195.03  191.2925  183.9482
 Note: If you were to look at the first 49 rows of the DataFrame (print(df.head(50))), you would see NaN (Not a Number) in the sma_50 column because there isn't enough preceding data to calculate the average.
 
+
