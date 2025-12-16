@@ -1,99 +1,83 @@
-# Alpaca Trading Course - Tutorial 6: Anatomy of a Bot - The Main Loop
+# Alpaca Trading Course - Tutorial Series
 
-This tutorial demonstrates the core component of any automated trading bot: the main loop. You will learn how to build a simple, infinite loop that serves as the bot's "heartbeat," allowing it to perform actions at regular, controlled intervals.
+This repository contains a series of tutorials for learning algorithmic trading with the Alpaca API.
 
-## What is a Main Loop?
+## 📚 Tutorials
 
-Every automated bot needs a core engine that runs continuously. This is the main loop - an infinite loop that:
+- **[Alpaca02](Alpaca02/)** - "Hello, Alpaca!" - Connect & Check Your Account Status
+  - Learn how to connect to the Alpaca API and retrieve basic account information
 
-- Wakes up at a set interval
-- Performs a series of tasks (e.g., checks the market, analyzes data, looks for a trade signal)
-- Goes back to sleep for a set period
-- Repeats this cycle indefinitely until you stop it
+- **[Alpaca04](Alpaca04/)** - Place Market Order
+  - Learn how to place a MARKET order to buy or sell a stock
+  - Files: `place_order.py`, `instructions.md`
 
-This structure allows your bot to operate autonomously 24/7 without any manual intervention.
+- **[Alpaca05](Alpaca05/)** - What Happened to My Order? – Checking Status & Positions
+  - Learn how to check the status of your submitted orders and view your current open positions
+  - Files: `check_status.py`, `instructions.md`
 
-## Project Structure
+- **[Alpaca06](Alpaca06/)** - Anatomy of a Bot – The Main Loop
+  - Learn about the most critical component of any automated bot: the main loop
+  - Build a simple, infinite loop that serves as the bot's "heartbeat"
+  - Files: `main_loop_bot.py`, `instructions.md`
+
+## 🚀 Getting Started
+
+Each tutorial is in its own folder. Navigate to the tutorial folder you want to follow and check the `README.md` file in that folder for specific instructions.
+
+### Prerequisites
+
+- Python 3.8 or higher (Python 3.10+ recommended)
+- An Alpaca Paper Trading Account
+- Alpaca API Keys (Paper Trading)
+
+### General Setup
+
+1. Navigate to the tutorial folder (e.g., `Alpaca02`, `Alpaca04`, `Alpaca05`, or `Alpaca06`)
+2. Install dependencies: `pip install -r requirements.txt`
+3. Configure your API keys in `config.py` (create from template if needed)
+4. Run the tutorial script
+
+## 📁 Repository Structure
 
 ```
-alpaca_bot_project/
-├── config.py              # API credentials (not included in repo - see setup below)
-├── config.py.template     # Template for config.py
-├── main_loop_bot.py       # Main bot script
-├── requirements.txt       # Python dependencies
-├── README.md             # This file
-└── .gitignore            # Git ignore rules
+AlpacaTutorial/
+│
+├── Alpaca02/              # Tutorial 2: Hello Alpaca
+│   ├── hello_alpaca.py   # Main script
+│   ├── README.md         # Tutorial-specific documentation
+│   ├── requirements.txt  # Python dependencies
+│   └── ...
+│
+├── Alpaca04/              # Tutorial 4: Place Market Order
+│   ├── place_order.py    # Main script
+│   ├── README.md         # Tutorial-specific documentation
+│   ├── requirements.txt  # Python dependencies
+│   ├── instructions.md   # Detailed tutorial instructions
+│   └── ...
+│
+├── Alpaca05/              # Tutorial 5: Check Order Status & Positions
+│   ├── check_status.py   # Main script
+│   ├── README.md         # Tutorial-specific documentation
+│   ├── requirements.txt  # Python dependencies
+│   ├── instructions.md   # Detailed tutorial instructions
+│   └── ...
+│
+├── Alpaca06/              # Tutorial 6: Anatomy of a Bot - The Main Loop
+│   ├── main_loop_bot.py  # Main script
+│   ├── README.md         # Tutorial-specific documentation
+│   ├── requirements.txt  # Python dependencies
+│   ├── instructions.md   # Detailed tutorial instructions
+│   └── ...
+│
+└── README.md             # This file
 ```
 
-## Setup
+## 🔒 Security
 
-### 1. Install Dependencies
+- **Never commit `config.py`** - It contains your API keys
+- Each tutorial folder has its own `.gitignore` to protect sensitive files
+- Always use Paper Trading keys for tutorials
 
-```bash
-pip install -r requirements.txt
-```
+## 📝 License
 
-### 2. Configure API Credentials
-
-1. Copy `config.py.template` to `config.py`:
-   ```bash
-   cp config.py.template config.py
-   ```
-
-2. Edit `config.py` and add your Alpaca API credentials:
-   - Get your API keys from: https://app.alpaca.markets/paper/dashboard/overview
-   - Replace `YOUR_API_KEY_HERE` and `YOUR_SECRET_KEY_HERE` with your actual keys
-
-**Important:** The `config.py` file is excluded from git to protect your API keys. Never commit this file!
-
-### 3. Run the Bot
-
-```bash
-python main_loop_bot.py
-```
-
-The bot will:
-- Start and display "Bot is starting..."
-- Every 60 seconds, check your account status and buying power
-- Continue running until you stop it
-
-### 4. Stop the Bot
-
-Press `Ctrl+C` in your terminal to gracefully stop the bot. You will see the message "Bot is shutting down. Goodbye!"
-
-## How It Works
-
-### The Main Loop
-
-The core of the bot is an infinite `while True:` loop that:
-1. Gets the current timestamp
-2. Fetches account information from Alpaca API
-3. Displays account status and buying power
-4. Sleeps for 60 seconds before the next iteration
-
-### Error Handling
-
-All API calls are wrapped in `try...except` blocks to ensure the bot continues running even if one iteration fails. If an error occurs, the bot logs it and waits 30 seconds before retrying.
-
-### Rate Limiting
-
-The `time.sleep(60)` command is critical - without it, the loop would run thousands of times per second, overwhelming your computer and spamming the Alpaca API, which would result in rate limiting.
-
-## Security Notes
-
-- **Never commit `config.py`** - It contains your API keys and is excluded via `.gitignore`
-- **Always use paper trading** - The default `BASE_URL` points to the paper trading environment for safety
-- **Keep your keys secure** - Treat your API keys like passwords
-
-## Next Steps
-
-In future tutorials, you'll learn how to:
-- Fetch market data inside the main loop
-- Calculate technical indicators
-- Implement trading strategies
-- Place orders based on signals
-
-## License
-
-This is an educational project for learning automated trading with Alpaca.
-
+This tutorial series is part of an educational course on algorithmic trading with Alpaca.
