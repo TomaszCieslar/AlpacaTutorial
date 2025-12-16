@@ -4,29 +4,26 @@ __pycache__/
 *$py.class
 *.so
 .Python
+*.egg-info/
+dist/
+build/
 
-<<<<<<< HEAD
-# API Configuration (contains sensitive keys)
-config.py
-=======
 # Virtual environments
 venv/
 env/
 ENV/
->>>>>>> 74547d7f0c9ddaf009fde77493a4547774555625
+.venv/
+
+# API Configuration (contains sensitive keys)
+config.py
 
 # IDE configuration
 .cursorrules
 .vscode/
 .idea/
-<<<<<<< HEAD
-=======
 *.swp
 *.swo
-
-# Sensitive configuration files
-config.py
->>>>>>> 74547d7f0c9ddaf009fde77493a4547774555625
+*~
 
 # Environment variables
 .env
@@ -36,19 +33,12 @@ config.py
 .DS_Store
 Thumbs.db
 
-<<<<<<< HEAD
 # Logs
 *.log
-=======
+
 # Jupyter Notebook
 .ipynb_checkpoints
-
-# Distribution / packaging
-dist/
-build/
-*.egg-info/
 
 # Local documentation files (not for publication)
 HOW_TO_ADD_TUTORIAL.md
 PUBLISH_GITHUB.md
->>>>>>> 74547d7f0c9ddaf009fde77493a4547774555625
