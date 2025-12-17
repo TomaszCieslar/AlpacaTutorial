@@ -43,7 +43,13 @@ pip install -r requirements.txt
 
 ### 3. Configure your API keys
 
-Create a `config.py` file in the project directory:
+Copy the example config file and add your credentials:
+
+```bash
+copy config.example.py config.py
+```
+
+Then edit `config.py` and add your Alpaca Paper Trading API keys:
 
 ```python
 API_KEY = "YOUR_PAPER_TRADING_API_KEY"
