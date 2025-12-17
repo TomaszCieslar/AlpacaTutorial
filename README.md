@@ -1,141 +1,167 @@
-# Alpaca Trading Tutorial 11: Bracket Orders
+# 🚀 Alpaca Trading Course - Complete Tutorial Series
 
-## 📚 Tutorial: The Safety Net – How to Set a Simple Stop-Loss
+Kompletny kurs edukacyjny dotyczący algorytmicznego tradingu z wykorzystaniem API Alpaca.
 
-This is Tutorial 11 from the Alpaca Trading Course series. In this tutorial, you will learn one of the most critical aspects of risk management: how to automatically protect your trades using **bracket orders**.
+## 📚 Lista Tutoriali
 
-## 🎯 What You'll Learn
+### Tutorial 02: Hello Alpaca
+Pierwsze połączenie z API Alpaca i weryfikacja konta.
+- 📁 Folder: `Alpaca02/`
+- 🎯 Cel: Nauka podstawowej konfiguracji i połączenia z API
 
-- How to set automatic **stop-loss** orders to limit potential losses
-- How to set automatic **take-profit** orders to lock in gains
-- How to use **bracket orders** to manage risk without manual intervention
-- How to implement the "Golden Cross" strategy with automated exits
+### Tutorial 04: Place Order
+Składanie pierwszego zlecenia kupna/sprzedaży.
+- 📁 Folder: `Alpaca04/`
+- 🎯 Cel: Zrozumienie jak składać zlecenia market order
 
-## 🛡️ What is a Bracket Order?
+### Tutorial 05: Check Status
+Sprawdzanie statusu złożonych zleceń.
+- 📁 Folder: `Alpaca05/`
+- 🎯 Cel: Monitorowanie zleceń i pozycji
 
-A bracket order combines three orders into one:
-1. **Entry Order**: Your initial buy order
-2. **Take-Profit**: Automatically sells at +5% profit
-3. **Stop-Loss**: Automatically sells at -2% loss
+### Tutorial 06: Main Loop Bot
+Tworzenie pierwszego bota z pętlą główną.
+- 📁 Folder: `Alpaca06/`
+- 🎯 Cel: Budowa struktury działającego bota
 
-When one exit order triggers, the other is automatically canceled (One-Cancels-Other).
+### Tutorial 07: Calculate SMA
+Obliczanie Simple Moving Average (SMA).
+- 📁 Folder: `Alpaca07/`
+- 🎯 Cel: Analiza techniczna - średnie kroczące
 
-## 📋 Prerequisites
+### Tutorial 08: Crossover Detector
+Wykrywanie przecięć średnich kroczących (Golden Cross / Death Cross).
+- 📁 Folder: `Alpaca08/`
+- 🎯 Cel: Implementacja sygnałów tradingowych
 
-- Python 3.8 or higher
-- Alpaca Paper Trading Account ([Sign up here](https://alpaca.markets/))
-- Basic understanding of moving averages
+### Tutorial 09: Crossover Bot v1
+Pierwszy działający bot tradingowy oparty na przecięciach SMA.
+- 📁 Folder: `Alpaca09/`
+- 🎯 Cel: Połączenie analizy z automatycznym tradingiem
 
-## 🚀 Quick Start
+### Tutorial 10: Crossover Bot Final
+Finalna wersja bota z pełną logiką wejścia i wyjścia.
+- 📁 Folder: `Alpaca10/`
+- 🎯 Cel: Kompletny system tradingowy
 
-### 1. Clone the repository
+### Tutorial 11: Bracket Orders 🆕
+Zaawansowane zarządzanie ryzykiem z wykorzystaniem bracket orders (Stop-Loss & Take-Profit).
+- 📁 Folder: `Alpaca11/`
+- 🎯 Cel: Automatyczna ochrona kapitału i zabezpieczenie zysków
+- ✨ **Nowe funkcje**: 
+  - Bracket Orders (OCO - One-Cancels-Other)
+  - Automatyczny Stop-Loss (-2%)
+  - Automatyczny Take-Profit (+5%)
+  - "Set and Forget" approach
+
+## 🎓 Filozofia Kursu
+
+### Clarity Over Cleverness
+- Priorytet: edukacja i zrozumienie
+- Unikamy "magii" - preferujemy kod werbalny i jawny
+- Jedna linia = jedna akcja
+
+### Zasady Kodu
+- ✅ Pełne, opisowe nazwy zmiennych
+- ✅ Komentarze wyjaśniają "DLACZEGO", nie "CO"
+- ✅ Każda funkcja robi jedną rzecz
+- ✅ Wszystkie wywołania API w blokach try/except
+
+## 🔒 Bezpieczeństwo
+
+- ⚠️ **NIE commituj kluczy API!**
+- Klucze przechowuj w `config.py` (dodany do `.gitignore`)
+- Domyślnie używamy Paper Trading (bezpieczne testowanie)
+
+## 📋 Wymagania
+
+- Python 3.8+
+- Konto Paper Trading w Alpaca ([Zarejestruj się](https://alpaca.markets/))
+- Podstawowa znajomość Pythona
+
+## 🚀 Szybki Start
+
+### 1. Sklonuj repozytorium
 
 ```bash
 git clone https://github.com/TomaszCieslar/AlpacaTutorial.git
 cd AlpacaTutorial
 ```
 
-### 2. Install dependencies
+### 2. Przejdź do wybranego tutorialu
+
+```bash
+cd Alpaca11
+```
+
+### 3. Zainstaluj zależności
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Configure your API keys
-
-Copy the example config file and add your credentials:
+### 4. Skonfiguruj klucze API
 
 ```bash
 copy config.example.py config.py
 ```
 
-Then edit `config.py` and add your Alpaca Paper Trading API keys:
+Edytuj `config.py` i dodaj swoje klucze API.
 
-```python
-API_KEY = "YOUR_PAPER_TRADING_API_KEY"
-SECRET_KEY = "YOUR_PAPER_TRADING_SECRET_KEY"
-BASE_URL = "https://paper-api.alpaca.markets"
-```
-
-⚠️ **Never commit your `config.py` file!** It's already in `.gitignore`.
-
-### 4. Run the bot
+### 5. Uruchom bota
 
 ```bash
 python bracket_bot.py
 ```
 
-## 📊 Trading Strategy
+## 📊 Struktura Projektu
 
-The bot uses a **Golden Cross** strategy:
-- **Signal**: 20-day SMA crosses above 50-day SMA
-- **Entry**: Market buy order
-- **Take-Profit**: +5% above entry price
-- **Stop-Loss**: -2% below entry price
-
-## 🔒 Risk Management
-
-- **Default Stop-Loss**: 2% (you risk only 2% per trade)
-- **Default Take-Profit**: 5% (2.5:1 reward-to-risk ratio)
-- **Position Size**: 1 share (adjustable in code)
-- **Symbol**: AAPL (adjustable in code)
-
-## ⚙️ Configuration
-
-Edit these constants in `bracket_bot.py`:
-
-```python
-SYMBOL_TO_TRADE = "AAPL"           # Change to any stock
-QTY_PER_TRADE = 1                   # Number of shares
-TAKE_PROFIT_PERCENTAGE = 5.0        # Profit target
-STOP_LOSS_PERCENTAGE = 2.0          # Maximum loss
+```
+AlpacaTutorial/
+├── Alpaca02/           # Tutorial 02
+├── Alpaca04/           # Tutorial 04
+├── Alpaca05/           # Tutorial 05
+├── Alpaca06/           # Tutorial 06
+├── Alpaca07/           # Tutorial 07
+├── Alpaca08/           # Tutorial 08
+├── Alpaca09/           # Tutorial 09
+├── Alpaca10/           # Tutorial 10
+├── Alpaca11/           # Tutorial 11 (Bracket Orders)
+├── .gitignore
+├── README.md           # Ten plik
+├── HOW_TO_PUBLISH.md   # Instrukcje publikacji
+└── PUBLISH_GITHUB.md   # Przewodnik GitHub
 ```
 
-## 📖 Code Structure
+## 🎯 Rekomendowana Ścieżka Nauki
 
-The code follows educational best practices:
-- **Clear variable names**: `take_profit_price`, not `tp`
-- **Single responsibility**: Each function does one thing
-- **Extensive comments**: Explains WHY, not just WHAT
-- **Error handling**: All API calls wrapped in try/except
+1. **Zacznij od Tutorial 02** - Podstawy połączenia z API
+2. **Przejdź kolejno** przez wszystkie tutoriale (02 → 11)
+3. **Eksperymentuj** - modyfikuj parametry, testuj różne symbole
+4. **Zawsze używaj Paper Trading** - nie ryzykuj prawdziwych pieniędzy podczas nauki
 
-## 🎓 Educational Philosophy
+## ⚠️ Ważne Ostrzeżenia
 
-This project prioritizes **clarity over cleverness**:
-- One line = one action
-- No "magic" code
-- Verbose, explicit logic
-- Perfect for beginners
+- 🔴 **To tylko edukacja** - nie jest to porada finansowa
+- 🔴 **Paper Trading Only** - używaj wyłącznie konta testowego
+- 🔴 **Ryzyko** - handel na rynkach wiąże się z ryzykiem utraty kapitału
+- 🔴 **Testuj dokładnie** - zanim pomyślisz o prawdziwym tradingu
 
-## ⚠️ Important Warnings
+## 🤝 Wkład w Projekt
 
-- **This is for PAPER TRADING only** - Uses fake money
-- **Not financial advice** - Educational purposes only
-- **Test thoroughly** before considering live trading
-- **Markets are risky** - You can lose money
+Projekt edukacyjny otwarty na:
+- Zgłaszanie problemów (issues)
+- Sugestie ulepszeń
+- Dzielenie się doświadczeniami edukacyjnymi
 
-## 📚 Related Tutorials
+## 📄 Licencja
 
-This is part of a series. Check out other tutorials:
-- Tutorial 1-10: [Previous concepts]
-- Tutorial 12: [Coming next]
+MIT License - Wolne użytkowanie do celów edukacyjnych
 
-## 🤝 Contributing
+## 📞 Wsparcie
 
-This is an educational project. Feel free to:
-- Report issues
-- Suggest improvements
-- Share your learning experience
-
-## 📄 License
-
-MIT License - Free to use for educational purposes
-
-## 📞 Support
-
-Questions? Open an issue on GitHub!
+Masz pytania? Otwórz issue na GitHubie!
 
 ---
 
-**Remember**: Never trade with money you can't afford to lose. Always test in paper trading first! 📈
-
+**Pamiętaj**: Nigdy nie handluj pieniędzmi, których nie możesz stracić. Zawsze najpierw testuj na paper trading! 📈🎓
