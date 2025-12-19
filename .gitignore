@@ -43,3 +43,7 @@ ENV/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Internal documentation and gitignore files (not for public repository)
+HOW_TO_PUBLISH.md
+**/.gitignore
