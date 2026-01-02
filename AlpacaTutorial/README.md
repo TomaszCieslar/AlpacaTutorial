@@ -1,353 +1,353 @@
-# 🚀 Alpaca Trading Course - Complete Tutorial Series
+# Alpaca Trading Course - Complete Tutorial Series
 
-Kompletny kurs edukacyjny dotyczący algorytmicznego tradingu z wykorzystaniem API Alpaca. Kurs składa się z 30 lekcji, które prowadzą od podstaw (generowanie kluczy API) do zaawansowanych strategii (statistical arbitrage, pairs trading).
+A complete educational course on algorithmic trading using the Alpaca API. The course consists of 30 lessons that guide you from the basics (generating API keys) to advanced strategies (statistical arbitrage, pairs trading).
 
-## 📚 Przegląd Kursu
+## Course Overview
 
-Kurs jest podzielony na kilka sekcji tematycznych, które systematycznie budują wiedzę i umiejętności w zakresie algorytmicznego tradingu:
+The course is divided into several thematic sections that systematically build knowledge and skills in algorithmic trading:
 
-### 🔰 Sekcja 1: Podstawy (Lekcje 1-5)
-**Fundamenty - Konfiguracja i pierwsze kroki**
+### Section 1: Fundamentals (Lessons 1-5)
+**Fundamentals - Setup and First Steps**
 
-- **Lesson 1: Generating API Keys in Alpaca** - Tworzenie konta Alpaca i generowanie kluczy API do paper trading
-- **Lesson 2: "Hello, Alpaca!" - Connect & Check Your Account Status** - Pierwsze połączenie z API Alpaca i weryfikacja konta
-- **Lesson 3: Fetching Market Data – Your First Candlestick** - Pobieranie historycznych danych OHLCV (Open, High, Low, Close, Volume)
-- **Lesson 4: Place Market Order** - Składanie pierwszego zlecenia kupna/sprzedaży
-- **Lesson 5: What Happened to My Order? – Checking Status & Positions** - Sprawdzanie statusu zleceń i pozycji
+- **Lesson 1: Generating API Keys in Alpaca** - Creating an Alpaca account and generating API keys for paper trading
+- **Lesson 2: "Hello, Alpaca!" - Connect & Check Your Account Status** - First connection to the Alpaca API and account verification
+- **Lesson 3: Fetching Market Data – Your First Candlestick** - Fetching historical OHLCV data (Open, High, Low, Close, Volume)
+- **Lesson 4: Place Market Order** - Placing your first buy/sell order
+- **Lesson 5: What Happened to My Order? – Checking Status & Positions** - Checking order status and positions
 
-### 🔄 Sekcja 2: Budowa Bota (Lekcje 6-10)
-**Struktura bota i podstawowe strategie**
+### Section 2: Building a Bot (Lessons 6-10)
+**Bot structure and basic strategies**
 
-- **Lesson 6: Anatomy of a Bot - The Main Loop** - Tworzenie głównej pętli bota umożliwiającej ciągłą pracę
-- **Lesson 7: Simple Moving Average (SMA)** - Obliczanie średnich kroczących do analizy technicznej
-- **Lesson 8: Moving Average Crossover Detector** - Wykrywanie przecięć średnich (Golden Cross / Death Cross)
-- **Lesson 9: Simple Exit Logic – Selling on a Reversal Signal** - Implementacja logiki wyjścia z pozycji
-- **Lesson 10: Moving Average Crossover Strategy - Complete Bot** - Kompletny, działający bot tradingowy
+- **Lesson 6: Anatomy of a Bot - The Main Loop** - Creating the main bot loop for continuous operation
+- **Lesson 7: Simple Moving Average (SMA)** - Calculating moving averages for technical analysis
+- **Lesson 8: Moving Average Crossover Detector** - Detecting moving average crossovers (Golden Cross / Death Cross)
+- **Lesson 9: Simple Exit Logic – Selling on a Reversal Signal** - Implementing exit logic for positions
+- **Lesson 10: Moving Average Crossover Strategy - Complete Bot** - A complete, working trading bot
 
-### 🛡️ Sekcja 3: Zarządzanie Ryzykiem (Lekcje 11-15)
-**Ochrona kapitału i zarządzanie pozycjami**
+### Section 3: Risk Management (Lessons 11-15)
+**Capital protection and position management**
 
-- **Lesson 11: Bracket Orders - Stop-Loss & Take-Profit** - Automatyczna ochrona kapitału za pomocą bracket orders
-- **Lesson 12: Take Your Profits! – Setting a Take-Profit Order** - Automatyczne zabezpieczanie zysków
-- **Lesson 13: Never Risk Too Much – Calculating Position Size** - Dynamiczne obliczanie rozmiaru pozycji (fundament profesjonalnego zarządzania ryzykiem)
-- **Lesson 14: Trailing Stop-Loss Bot** - Trailing stop-loss chroniący zyski podczas ruchu ceny w korzystnym kierunku
-- **Lesson 15: Implementing a Trailing Stop-Loss in Code** - Zaawansowana implementacja trailing stop-loss od zera
+- **Lesson 11: Bracket Orders - Stop-Loss & Take-Profit** - Automatic capital protection using bracket orders
+- **Lesson 12: Take Your Profits! – Setting a Take-Profit Order** - Automatically securing profits
+- **Lesson 13: Never Risk Too Much – Calculating Position Size** - Dynamic position size calculation (the foundation of professional risk management)
+- **Lesson 14: Trailing Stop-Loss Bot** - Trailing stop-loss that protects profits as price moves in a favorable direction
+- **Lesson 15: Implementing a Trailing Stop-Loss in Code** - Advanced implementation of trailing stop-loss from scratch
 
-### 📊 Sekcja 4: Zaawansowane Wskaźniki (Lekcje 16-20)
-**Analiza techniczna i zaawansowane strategie**
+### Section 4: Advanced Indicators (Lessons 16-20)
+**Technical analysis and advanced strategies**
 
-- **Lesson 16: Relative Strength – Building an RSI-Based Bot** - Bot oparty na wskaźniku RSI (Relative Strength Index) do mean-reversion trading
-- **Lesson 17: The Magic of Volatility – A Bollinger Bands® Bot** - Strategia "squeeze breakout" wykorzystująca Bollinger Bands
-- **Lesson 18: The Power of Momentum – Implementing a MACD Strategy** - Bot wykorzystujący MACD (Moving Average Convergence Divergence) do wykrywania zmian momentum
-- **Lesson 19: Signal Confirmation – Combining Two Indicators** - Łączenie wielu wskaźników dla potwierdzenia sygnałów
-- **Lesson 20: The Bigger Picture – Analyzing Multiple Timeframes** - Analiza wielookresowa (Multi-Timeframe Analysis) - technika profesjonalnych traderów
+- **Lesson 16: Relative Strength – Building an RSI-Based Bot** - Bot based on the RSI (Relative Strength Index) indicator for mean-reversion trading
+- **Lesson 17: The Magic of Volatility – A Bollinger Bands® Bot** - "Squeeze breakout" strategy using Bollinger Bands
+- **Lesson 18: The Power of Momentum – Implementing a MACD Strategy** - Bot using MACD (Moving Average Convergence Divergence) to detect momentum changes
+- **Lesson 19: Signal Confirmation – Combining Two Indicators** - Combining multiple indicators for signal confirmation
+- **Lesson 20: The Bigger Picture – Analyzing Multiple Timeframes** - Multi-timeframe analysis - a technique used by professional traders
 
-### 🏗️ Sekcja 5: Produkcja i Profesjonalizm (Lekcje 21-25)
-**Przygotowanie bota do produkcji**
+### Section 5: Production and Professionalism (Lessons 21-25)
+**Preparing the bot for production**
 
-- **Lesson 21: The Bot's "Black Box" – Logging Every Decision to a File** - Kompleksowe logowanie wszystkich decyzji tradingowych
-- **Lesson 22: Stop Digging in the Code – Using an External Config File** - Separacja konfiguracji od kodu (profesjonalna praktyka)
-- **Lesson 23: What If the Bot Restarts? – Managing Position State** - Zarządzanie stanem pozycji - bot z pamięcią przetrwa restart
-- **Lesson 24: Stay Updated – Sending Real-Time Notifications to Discord** - Powiadomienia w czasie rzeczywistym przez Discord
-- **Lesson 25: Making Your Bot Resilient – Handling API and Connection Errors** - Obsługa błędów i tworzenie odpornego bota gotowego do produkcji
+- **Lesson 21: The Bot's "Black Box" – Logging Every Decision to a File** - Comprehensive logging of all trading decisions
+- **Lesson 22: Stop Digging in the Code – Using an External Config File** - Separating configuration from code (professional practice)
+- **Lesson 23: What If the Bot Restarts? – Managing Position State** - Position state management - a bot with memory that survives restarts
+- **Lesson 24: Stay Updated – Sending Real-Time Notifications to Discord** - Real-time notifications via Discord
+- **Lesson 25: Making Your Bot Resilient – Handling API and Connection Errors** - Error handling and creating a resilient bot ready for production
 
-### 🧪 Sekcja 6: Testowanie i Optymalizacja (Lekcje 26-28)
-**Walidacja strategii i real-time data**
+### Section 6: Testing and Optimization (Lessons 26-28)
+**Strategy validation and real-time data**
 
-- **Lesson 26: Time Travel – The Basics of Backtesting Your Strategy** - Podstawy backtestingu strategii na danych historycznych
-- **Lesson 27: Understanding Your Results – Analyzing a Backtest Report** - Analiza wyników backtestu jak profesjonalista (Annual Return, Max Drawdown, Sharpe Ratio)
-- **Lesson 28: Faster Than HTTP – Streaming Real-Time Data with WebSockets** - Przejście z polling na WebSockets dla danych w czasie rzeczywistym
+- **Lesson 26: Time Travel – The Basics of Backtesting Your Strategy** - Basics of backtesting strategies on historical data
+- **Lesson 27: Understanding Your Results – Analyzing a Backtest Report** - Analyzing backtest results like a professional (Annual Return, Max Drawdown, Sharpe Ratio)
+- **Lesson 28: Faster Than HTTP – Streaming Real-Time Data with WebSockets** - Transitioning from polling to WebSockets for real-time data
 
-### 🚀 Sekcja 7: Deployment i Zaawansowane Strategie (Lekcje 29-30)
-**Wdrożenie i strategie profesjonalne**
+### Section 7: Deployment and Advanced Strategies (Lessons 29-30)
+**Deployment and professional strategies**
 
-- **Lesson 29: Your Bot Online 24/7 – Deploying to a VPS Server** - Wdrożenie bota na serwer VPS dla pracy 24/7
-- **Lesson 30: A Step Towards PRO – Statistical Arbitrage (Pairs Trading)** - Zaawansowana strategia market-neutral: pairs trading wykorzystująca cointegration
+- **Lesson 29: Your Bot Online 24/7 – Deploying to a VPS Server** - Deploying the bot to a VPS server for 24/7 operation
+- **Lesson 30: A Step Towards PRO – Statistical Arbitrage (Pairs Trading)** - Advanced market-neutral strategy: pairs trading using cointegration
 
-## 🎯 Cele Kursu
+## Course Goals
 
-Po ukończeniu kursu będziesz potrafił:
+After completing the course, you will be able to:
 
-- ✅ Skonfigurować środowisko deweloperskie i połączyć się z API Alpaca
-- ✅ Pobierać i analizować dane rynkowe (OHLCV)
-- ✅ Budować kompletne, działające boty tradingowe
-- ✅ Implementować różne strategie tradingowe (trend-following, mean-reversion, momentum)
-- ✅ Zarządzać ryzykiem profesjonalnie (position sizing, stop-loss, take-profit)
-- ✅ Używać zaawansowanych wskaźników technicznych (SMA, RSI, MACD, Bollinger Bands)
-- ✅ Łączyć wiele wskaźników i timeframe'ów dla lepszych sygnałów
-- ✅ Tworzyć odporne boty gotowe do produkcji (error handling, logging, state management)
-- ✅ Testować strategie na danych historycznych (backtesting)
-- ✅ Wdrażać boty na serwerach VPS dla pracy 24/7
-- ✅ Implementować zaawansowane strategie (pairs trading, statistical arbitrage)
+- Configure a development environment and connect to the Alpaca API
+- Fetch and analyze market data (OHLCV)
+- Build complete, working trading bots
+- Implement various trading strategies (trend-following, mean-reversion, momentum)
+- Manage risk professionally (position sizing, stop-loss, take-profit)
+- Use advanced technical indicators (SMA, RSI, MACD, Bollinger Bands)
+- Combine multiple indicators and timeframes for better signals
+- Create resilient bots ready for production (error handling, logging, state management)
+- Test strategies on historical data (backtesting)
+- Deploy bots to VPS servers for 24/7 operation
+- Implement advanced strategies (pairs trading, statistical arbitrage)
 
-## 📋 Wymagania
+## Requirements
 
-### Podstawowe Wymagania
+### Basic Requirements
 
-- **Python 3.8+** (Python 3.10+ zalecany)
-- **Konto Paper Trading w Alpaca** - [Zarejestruj się tutaj](https://alpaca.markets/)
-- **Podstawowa znajomość Pythona** - zmienne, funkcje, pętle, listy
-- **Podstawowa znajomość Git** (opcjonalnie, dla zarządzania kodem)
+- **Python 3.8+** (Python 3.10+ recommended)
+- **Alpaca Paper Trading Account** - [Sign up here](https://alpaca.markets/)
+- **Basic Python knowledge** - variables, functions, loops, lists
+- **Basic Git knowledge** (optional, for code management)
 
-### Wymagane Biblioteki Python
+### Required Python Libraries
 
-Każda lekcja zawiera plik `requirements.txt` z wymaganymi zależnościami. Główne biblioteki używane w kursie:
+Each lesson contains a `requirements.txt` file with required dependencies. Main libraries used in the course:
 
-- `alpaca-py` / `alpaca-trade-api` - Oficjalny SDK Alpaca
-- `pandas` - Manipulacja danymi
-- `numpy` - Obliczenia numeryczne
-- `pandas-ta` - Wskaźniki techniczne
-- `statsmodels` - Analiza statystyczna (dla pairs trading)
-- `backtesting` - Backtesting strategii
-- `requests` - HTTP requests (dla Discord webhooks)
+- `alpaca-py` / `alpaca-trade-api` - Official Alpaca SDK
+- `pandas` - Data manipulation
+- `numpy` - Numerical computations
+- `pandas-ta` - Technical indicators
+- `statsmodels` - Statistical analysis (for pairs trading)
+- `backtesting` - Strategy backtesting
+- `requests` - HTTP requests (for Discord webhooks)
 
-## 🚀 Szybki Start
+## Quick Start
 
-### 1. Sklonuj Repozytorium
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/TomaszCieslar/AlpacaTutorial.git
 cd AlpacaTutorial
 ```
 
-### 2. Rozpocznij od Lekcji 1
+### 2. Start with Lesson 1
 
 ```bash
 cd Alpaca01
 ```
 
-### 3. Zainstaluj Zależności
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Skonfiguruj Klucze API
+### 4. Configure API Keys
 
 ```bash
-# Skopiuj przykładowy plik konfiguracyjny
+# Copy the example configuration file
 cp config.example.py config.py
 
-# Edytuj config.py i dodaj swoje klucze API z Alpaca
-# ⚠️ NIGDY nie commituj config.py do Git!
+# Edit config.py and add your Alpaca API keys
+# WARNING: NEVER commit config.py to Git!
 ```
 
-### 5. Uruchom Przykładowy Kod
+### 5. Run Example Code
 
 ```bash
-# Dla lekcji 2:
+# For lesson 2:
 python hello_alpaca.py
 
-# Dla lekcji 3:
+# For lesson 3:
 python fetch_data.py
 
-# Dla lekcji 4:
+# For lesson 4:
 python place_order.py
 
-# itd...
+# etc...
 ```
 
-## 📁 Struktura Projektu
+## Project Structure
 
 ```
 AlpacaTutorial/
-├── Alpaca01/              # Lekcja 1: Generowanie kluczy API
-├── Alpaca02/              # Lekcja 2: Połączenie z API
-├── Alpaca03/              # Lekcja 3: Pobieranie danych rynkowych
-├── Alpaca04/              # Lekcja 4: Składanie zleceń
-├── Alpaca05/              # Lekcja 5: Sprawdzanie statusu
-├── Alpaca06/              # Lekcja 6: Główna pętla bota
-├── Alpaca07/              # Lekcja 7: Obliczanie SMA
-├── Alpaca08/              # Lekcja 8: Wykrywanie crossover
-├── Alpaca09/              # Lekcja 9: Logika wyjścia
-├── Alpaca10/              # Lekcja 10: Kompletny bot
-├── Alpaca11/              # Lekcja 11: Bracket orders
-├── Alpaca12/              # Lekcja 12: Take-profit
-├── Alpaca13/              # Lekcja 13: Position sizing
-├── Alpaca14/              # Lekcja 14: Trailing stop
-├── Alpaca15/              # Lekcja 15: Manual trailing stop
-├── Alpaca16/              # Lekcja 16: RSI bot
-├── Alpaca17/              # Lekcja 17: Bollinger Bands
-├── Alpaca18/              # Lekcja 18: MACD strategy
-├── Alpaca19/              # Lekcja 19: Signal confirmation
-├── Alpaca20/              # Lekcja 20: Multi-timeframe
-├── Alpaca21/              # Lekcja 21: Logging
-├── Alpaca22/              # Lekcja 22: External config
-├── Alpaca23/              # Lekcja 23: State management
-├── Alpaca24/              # Lekcja 24: Discord notifications
-├── Alpaca25/              # Lekcja 25: Error handling
-├── Alpaca26/              # Lekcja 26: Backtesting
-├── Alpaca27/              # Lekcja 27: Backtest analysis
-├── Alpaca28/              # Lekcja 28: WebSockets
-├── Alpaca29/              # Lekcja 29: VPS deployment
-├── Alpaca30/              # Lekcja 30: Pairs trading
-├── Instructions/          # Szczegółowe instrukcje dla każdej lekcji
-├── README.md              # Ten plik
-└── templateReadmy.md      # Szablon dla dokumentacji lekcji
+├── Alpaca01/              # Lesson 1: Generating API keys
+├── Alpaca02/              # Lesson 2: API connection
+├── Alpaca03/              # Lesson 3: Fetching market data
+├── Alpaca04/              # Lesson 4: Placing orders
+├── Alpaca05/              # Lesson 5: Checking status
+├── Alpaca06/              # Lesson 6: Main bot loop
+├── Alpaca07/              # Lesson 7: Calculating SMA
+├── Alpaca08/              # Lesson 8: Crossover detection
+├── Alpaca09/              # Lesson 9: Exit logic
+├── Alpaca10/              # Lesson 10: Complete bot
+├── Alpaca11/              # Lesson 11: Bracket orders
+├── Alpaca12/              # Lesson 12: Take-profit
+├── Alpaca13/              # Lesson 13: Position sizing
+├── Alpaca14/              # Lesson 14: Trailing stop
+├── Alpaca15/              # Lesson 15: Manual trailing stop
+├── Alpaca16/              # Lesson 16: RSI bot
+├── Alpaca17/              # Lesson 17: Bollinger Bands
+├── Alpaca18/              # Lesson 18: MACD strategy
+├── Alpaca19/              # Lesson 19: Signal confirmation
+├── Alpaca20/              # Lesson 20: Multi-timeframe
+├── Alpaca21/              # Lesson 21: Logging
+├── Alpaca22/              # Lesson 22: External config
+├── Alpaca23/              # Lesson 23: State management
+├── Alpaca24/              # Lesson 24: Discord notifications
+├── Alpaca25/              # Lesson 25: Error handling
+├── Alpaca26/              # Lesson 26: Backtesting
+├── Alpaca27/              # Lesson 27: Backtest analysis
+├── Alpaca28/              # Lesson 28: WebSockets
+├── Alpaca29/              # Lesson 29: VPS deployment
+├── Alpaca30/              # Lesson 30: Pairs trading
+├── Instructions/          # Detailed instructions for each lesson
+├── README.md              # This file
+└── templateReadmy.md      # Template for lesson documentation
 ```
 
-## 🎓 Filozofia Kursu
+## Course Philosophy
 
 ### Clarity Over Cleverness
 
-Kurs priorytetyzuje **jasność nad sprytem**:
+The course prioritizes **clarity over cleverness**:
 
-- ✅ **Pełne, opisowe nazwy zmiennych** - `take_profit_price` zamiast `tp`
-- ✅ **Komentarze wyjaśniają "DLACZEGO"** - nie tylko "CO"
-- ✅ **Jedna linia = jedna akcja** - unikamy złożonych, zagnieżdżonych wyrażeń
-- ✅ **Każda funkcja robi jedną rzecz** - zasada Single Responsibility
-- ✅ **Brak "magii"** - preferujemy kod werbalny i jawny
+- **Full, descriptive variable names** - `take_profit_price` instead of `tp`
+- **Comments explain "WHY"** - not just "WHAT"
+- **One line = one action** - we avoid complex, nested expressions
+- **Each function does one thing** - Single Responsibility Principle
+- **No "magic"** - we prefer verbal and explicit code
 
-### Zasady Kodu Edukacyjnego
+### Educational Code Principles
 
-- **Edukacja przed optymalizacją** - kod jest czytelny, niekoniecznie najszybszy
-- **Explicit over implicit** - wszystko jest wyraźnie napisane
-- **Error handling** - wszystkie wywołania API w blokach try/except
-- **Paper Trading First** - zawsze zaczynamy od bezpiecznego testowania
+- **Education before optimization** - code is readable, not necessarily fastest
+- **Explicit over implicit** - everything is clearly written
+- **Error handling** - all API calls in try/except blocks
+- **Paper Trading First** - always start with safe testing
 
-## 🔒 Bezpieczeństwo
+## Security
 
-### ⚠️ Krytyczne Zasady
+### Critical Rules
 
-1. **NIGDY nie commituj kluczy API!**
-   - Plik `config.py` jest w `.gitignore`
-   - Używaj `config.example.py` jako szablonu
-   - Nigdy nie udostępniaj kluczy publicznie
+1. **NEVER commit API keys!**
+   - The `config.py` file is in `.gitignore`
+   - Use `config.example.py` as a template
+   - Never share keys publicly
 
-2. **Zawsze używaj Paper Trading podczas nauki**
-   - Domyślnie wszystkie przykłady używają `https://paper-api.alpaca.markets`
-   - Testuj strategie bez ryzyka finansowego
-   - Przejdź na live trading dopiero po dokładnym przetestowaniu
+2. **Always use Paper Trading during learning**
+   - By default, all examples use `https://paper-api.alpaca.markets`
+   - Test strategies without financial risk
+   - Switch to live trading only after thorough testing
 
-3. **Chroń swoje klucze API**
-   - Traktuj je jak hasła
-   - Rotuj klucze jeśli podejrzewasz kompromitację
-   - Używaj osobnych kluczy dla paper i live trading
+3. **Protect your API keys**
+   - Treat them like passwords
+   - Rotate keys if you suspect compromise
+   - Use separate keys for paper and live trading
 
-## 📊 Rekomendowana Ścieżka Nauki
+## Recommended Learning Path
 
-### Dla Początkujących
+### For Beginners
 
-1. **Zacznij od Lekcji 1-5** - Podstawy konfiguracji i pierwszych operacji
-2. **Przejdź przez Lekcje 6-10** - Budowa pierwszego działającego bota
-3. **Skoncentruj się na Lekcjach 11-15** - Zarządzanie ryzykiem jest kluczowe
-4. **Eksperymentuj** - Modyfikuj parametry, testuj różne symbole
-5. **Zawsze używaj Paper Trading** - Nie ryzykuj prawdziwych pieniędzy podczas nauki
+1. **Start with Lessons 1-5** - Basics of setup and first operations
+2. **Go through Lessons 6-10** - Building your first working bot
+3. **Focus on Lessons 11-15** - Risk management is crucial
+4. **Experiment** - Modify parameters, test different symbols
+5. **Always use Paper Trading** - Don't risk real money while learning
 
-### Dla Zaawansowanych
+### For Advanced Users
 
-- **Lekcje 16-20** - Zaawansowane wskaźniki i strategie
-- **Lekcje 21-25** - Przygotowanie do produkcji
-- **Lekcje 26-28** - Testowanie i optymalizacja
-- **Lekcje 29-30** - Deployment i zaawansowane strategie
+- **Lessons 16-20** - Advanced indicators and strategies
+- **Lessons 21-25** - Production preparation
+- **Lessons 26-28** - Testing and optimization
+- **Lessons 29-30** - Deployment and advanced strategies
 
-## 🎯 Kluczowe Koncepcje Nauczane w Kursie
+## Key Concepts Taught in the Course
 
-### Podstawy Tradingu
+### Trading Basics
 
-- **Market Orders** - Podstawowe zlecenia kupna/sprzedaży
-- **OHLCV Data** - Dane świecowe (Open, High, Low, Close, Volume)
-- **Position Management** - Zarządzanie pozycjami
-- **Order Status** - Śledzenie statusu zleceń
+- **Market Orders** - Basic buy/sell orders
+- **OHLCV Data** - Candlestick data (Open, High, Low, Close, Volume)
+- **Position Management** - Managing positions
+- **Order Status** - Tracking order status
 
-### Analiza Techniczna
+### Technical Analysis
 
-- **Simple Moving Average (SMA)** - Średnie kroczące
-- **Relative Strength Index (RSI)** - Wskaźnik siły względnej
+- **Simple Moving Average (SMA)** - Moving averages
+- **Relative Strength Index (RSI)** - Relative strength indicator
 - **MACD** - Moving Average Convergence Divergence
-- **Bollinger Bands** - Pasy Bollingera do pomiaru zmienności
-- **Crossover Signals** - Sygnały przecięcia (Golden Cross, Death Cross)
+- **Bollinger Bands** - Bollinger Bands for volatility measurement
+- **Crossover Signals** - Crossover signals (Golden Cross, Death Cross)
 
-### Zarządzanie Ryzykiem
+### Risk Management
 
-- **Position Sizing** - Dynamiczne obliczanie rozmiaru pozycji
-- **Stop-Loss Orders** - Automatyczna ochrona przed stratami
-- **Take-Profit Orders** - Automatyczne zabezpieczanie zysków
-- **Bracket Orders** - Kombinacja entry, stop-loss i take-profit
-- **Trailing Stops** - Stop-loss podążający za ceną
+- **Position Sizing** - Dynamic position size calculation
+- **Stop-Loss Orders** - Automatic protection against losses
+- **Take-Profit Orders** - Automatic profit securing
+- **Bracket Orders** - Combination of entry, stop-loss and take-profit
+- **Trailing Stops** - Stop-loss that follows price
 
-### Zaawansowane Techniki
+### Advanced Techniques
 
-- **Multi-Timeframe Analysis** - Analiza wielookresowa
-- **Signal Confirmation** - Potwierdzanie sygnałów wieloma wskaźnikami
-- **Mean-Reversion Trading** - Strategie powrotu do średniej
-- **Trend-Following** - Strategie podążania za trendem
-- **Pairs Trading** - Statystyczny arbitraż (market-neutral)
+- **Multi-Timeframe Analysis** - Multi-timeframe analysis
+- **Signal Confirmation** - Confirming signals with multiple indicators
+- **Mean-Reversion Trading** - Mean-reversion strategies
+- **Trend-Following** - Trend-following strategies
+- **Pairs Trading** - Statistical arbitrage (market-neutral)
 
-### Produkcja i Deployment
+### Production and Deployment
 
-- **Error Handling** - Obsługa błędów i odporność bota
-- **Logging** - Kompleksowe logowanie decyzji
-- **State Management** - Zarządzanie stanem pozycji
-- **External Configuration** - Separacja konfiguracji od kodu
-- **Discord Notifications** - Powiadomienia w czasie rzeczywistym
-- **VPS Deployment** - Wdrożenie na serwerze dla pracy 24/7
-- **Backtesting** - Testowanie strategii na danych historycznych
-- **WebSockets** - Streaming danych w czasie rzeczywistym
+- **Error Handling** - Error handling and bot resilience
+- **Logging** - Comprehensive decision logging
+- **State Management** - Position state management
+- **External Configuration** - Separating configuration from code
+- **Discord Notifications** - Real-time notifications
+- **VPS Deployment** - Deployment to a server for 24/7 operation
+- **Backtesting** - Testing strategies on historical data
+- **WebSockets** - Streaming real-time data
 
-## ⚠️ Ważne Ostrzeżenia
+## Important Warnings
 
-### 🔴 To Tylko Edukacja
+### This is Education Only
 
-- **Nie jest to porada finansowa** - Kurs ma charakter wyłącznie edukacyjny
-- **Paper Trading Only** - Używaj wyłącznie konta testowego podczas nauki
-- **Ryzyko** - Handel na rynkach wiąże się z ryzykiem utraty kapitału
-- **Testuj dokładnie** - Zanim pomyślisz o prawdziwym tradingu, przetestuj wszystko w paper trading
+- **This is not financial advice** - The course is for educational purposes only
+- **Paper Trading Only** - Use only a test account while learning
+- **Risk** - Trading in markets involves the risk of capital loss
+- **Test thoroughly** - Before thinking about real trading, test everything in paper trading
 
-### 🟡 Zasady Bezpieczeństwa
+### Safety Rules
 
-- **Nigdy nie handluj pieniędzmi, których nie możesz stracić**
-- **Zawsze testuj w paper trading przed live trading**
-- **Rozumiej strategię przed wdrożeniem**
-- **Monitoruj swoje strategie regularnie**
-- **Używaj właściwych praktyk bezpieczeństwa**
-- **Rób kopie zapasowe konfiguracji**
+- **Never trade with money you cannot afford to lose**
+- **Always test in paper trading before live trading**
+- **Understand the strategy before implementing**
+- **Monitor your strategies regularly**
+- **Use proper security practices**
+- **Back up your configuration**
 
-## 📚 Dodatkowe Zasoby
+## Additional Resources
 
-### Dokumentacja Alpaca
+### Alpaca Documentation
 
 - [Alpaca API Documentation](https://alpaca.markets/docs/)
 - [Alpaca Python SDK](https://github.com/alpacahq/alpaca-trade-api-python)
 - [Alpaca Market Data API](https://alpaca.markets/docs/api-documentation/market-data-api/)
 
-### Wsparcie
+### Support
 
 - [Alpaca Support Center](https://alpaca.markets/support)
 - [Alpaca Status Page](https://status.alpaca.markets/)
-- [GitHub Issues](https://github.com/TomaszCieslar/AlpacaTutorial/issues) - Zgłaszaj problemy i pytania
+- [GitHub Issues](https://github.com/TomaszCieslar/AlpacaTutorial/issues) - Report problems and questions
 
-## 🤝 Wkład w Projekt
+## Contributing to the Project
 
-Projekt edukacyjny otwarty na:
+Educational project open to:
 
-- ✅ Zgłaszanie problemów (issues)
-- ✅ Sugestie ulepszeń
-- ✅ Dzielenie się doświadczeniami edukacyjnymi
-- ✅ Pull requests z poprawkami
+- Reporting issues
+- Suggestions for improvements
+- Sharing educational experiences
+- Pull requests with fixes
 
-## 📄 Licencja
+## License
 
-MIT License - Wolne użytkowanie do celów edukacyjnych
+MIT License - Free use for educational purposes
 
-## 🎓 Podsumowanie
+## Summary
 
-Ten kurs prowadzi Cię od zera do zaawansowanego poziomu w algorytmicznym tradingu. Po ukończeniu wszystkich 30 lekcji będziesz posiadał:
+This course guides you from zero to an advanced level in algorithmic trading. After completing all 30 lessons, you will have:
 
-- ✅ Kompletny, odporny bot tradingowy działający 24/7
-- ✅ Wiedzę o wielu strategiach tradingowych (directional i market-neutral)
-- ✅ Umiejętności zarządzania ryzykiem i position sizing
-- ✅ Możliwość backtestowania strategii
-- ✅ Umiejętność wdrożenia bota na serwerze VPS
-- ✅ Zaawansowane strategie statystycznego arbitrażu
+- A complete, resilient trading bot running 24/7
+- Knowledge of many trading strategies (directional and market-neutral)
+- Risk management and position sizing skills
+- Ability to backtest strategies
+- Ability to deploy a bot to a VPS server
+- Advanced statistical arbitrage strategies
 
 **"Risk comes from not knowing what you're doing." - Warren Buffett**
 
-Zacznij od Lekcji 1 i krok po kroku buduj swoją wiedzę. Pamiętaj: zawsze testuj w paper trading i nigdy nie ryzykuj więcej, niż możesz stracić.
+Start with Lesson 1 and build your knowledge step by step. Remember: always test in paper trading and never risk more than you can afford to lose.
 
 ---
 
-**Happy Trading! 📈🎓**
+**Happy Trading!**
 
 *Alpaca Trading Course - Complete Tutorial Series*  
-*30 lekcji od podstaw do zaawansowanych strategii*
+*30 lessons from basics to advanced strategies*
